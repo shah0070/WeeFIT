@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WeeFIT</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="category_one">7 Mins Abs</string>
+    <string name="category_two">7 Mins Yoga</string>
+    <string name="category_three">7 Legs</string>
+    <string name="category_four">7 Mins Full Body</string>
+    <string name="category_five">Ball Fit</string>
+
+    <string name="all_done">All done! Select next category.</string>
+
+    <string name="great_work">Great Work</string>
+
+    <string name="summery_title">Here is your Summary:</string>
+    <string name="ex_add_msg">Please long press on an exercise to add data.</string>
+    <string name="msg_to_move_on">When you complete exercise, Long Press to go to move on.</string>
+
+    <string name="added">Added</string>
+    <string name="removed">Removed</string>
+    <string name="default_time">00:00</string>
+    <string name="default_sets">0</string>
+    <string name="default_reps">0</string>
+    <string name="default_rest">00:00</string>
+    <string name="default_calory">0</string>
+
+    <string name="time_text">Time</string>
+    <string name="reps_text">Repetitions</string>
+    <string name="time_sets">Time/Sets</string>
+    <string name="reps_sets">Reps/Sets</string>
+    <string name="rest_text">Rest Time</string>
+
+
+</resources>
+

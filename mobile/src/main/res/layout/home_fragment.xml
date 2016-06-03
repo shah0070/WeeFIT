@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1006">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="503"
+            android:orientation="vertical"
+            android:weightSum="503">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50" />
+
+            <LinearLayout
+                android:id="@+id/preset_workout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="328"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="225dp"
+                    android:layout_height="225dp"
+                    android:background="@drawable/preset_workout" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:gravity="center"
+                android:text="WeeFit Preset Exercise"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="45"
+                android:gravity="center"
+                android:text="A selection of workouts"
+                android:textColor="#0099F1"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="503"
+            android:orientation="vertical"
+            android:weightSum="503">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35" />
+
+            <LinearLayout
+                android:id="@+id/create_workout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="328"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="225dp"
+                    android:layout_height="225dp"
+                    android:background="@drawable/start_workout" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:gravity="center"
+                android:text="WeeFit Manual Exercise"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="45"
+                android:gravity="center"
+                android:text="Create your workout"
+                android:textColor="#0099F1"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

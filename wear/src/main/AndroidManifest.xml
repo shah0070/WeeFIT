@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.creativebucket.weefit">
+
+    <uses-feature android:name="android.hardware.type.watch" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="in.creativebucket.weefit.WeeFitApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".presetworkout.PresetWorkoutSelectionActivity" />
+        <activity android:name=".presetworkout.PresetExerciseStartActivity" />
+        <activity android:name=".presetworkout.PresetExerciseSelectActivity" />
+        <activity android:name=".presetworkout.PresetRestActivity" />
+        <activity android:name=".presetworkout.WorkoutsReviewActivity" />
+        <activity android:name=".ui.PlayPauseStopActivity" />
+
+        <activity android:name=".createworkout.CreateExerciseSelectionActivity" />
+        <activity android:name=".createworkout.CreateWorkoutCategoryActivity" />
+        <activity android:name=".createworkout.CreateWorkoutTimeRepsActivity" />
+        <activity android:name=".createworkout.CreateWorkoutOptionsActivity" />
+        <activity android:name=".createworkout.CreatedExerciseStartActivity" />
+        <activity android:name=".createworkout.CreatedExerciseRestActivity" />
+
+    </application>
+
+</manifest>

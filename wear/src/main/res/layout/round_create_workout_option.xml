@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    tools:deviceIds="wear_round"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/time_based"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/time_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="@string/time_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/reps_based"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/reps_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="@string/reps_text" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

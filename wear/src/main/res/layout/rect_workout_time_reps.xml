@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:deviceIds="wear_square"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:text="Time/Sets"
+            android:textColor="#000000"
+            android:gravity="center_horizontal|bottom"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/input_time_sets"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_weight="4"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_height="140dp">
+
+                <ScrollView
+                    android:layout_width="100dp"
+                    android:scrollbars="none"
+                    android:overScrollMode="never"
+                    android:background="@drawable/gray_circle"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:id="@+id/input_two"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:gravity="center_horizontal"
+                    android:text="Seconds" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:layout_height="100dp">
+
+                <ScrollView
+                    android:layout_width="55dp"
+                    android:scrollbars="none"
+                    android:paddingTop="5dp"
+                    android:overScrollMode="never"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/blue_circle"
+                    android:layout_height="55dp">
+
+                    <LinearLayout
+                        android:id="@+id/input_one"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:gravity="center_horizontal"
+                    android:text="Mins" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:layout_height="100dp">
+
+                <ScrollView
+                    android:layout_width="55dp"
+                    android:scrollbars="none"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:overScrollMode="never"
+                    android:background="@drawable/blue_circle"
+                    android:layout_height="55dp">
+
+                    <LinearLayout
+                        android:id="@+id/input_three"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:gravity="center_horizontal"
+                    android:text="Sets" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/input_reps_sets"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_weight="4"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_height="140dp">
+
+                <ScrollView
+                    android:layout_width="100dp"
+                    android:scrollbars="none"
+                    android:background="@drawable/gray_circle"
+                    android:overScrollMode="never"
+                    android:padding="15dp"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:id="@+id/input_reps_seconds"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/reps_or_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:gravity="center_horizontal"
+                    android:text="Seconds" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:layout_height="100dp">
+
+                <ScrollView
+                    android:layout_width="60dp"
+                    android:scrollbars="none"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="8dp"
+                    android:overScrollMode="never"
+                    android:background="@drawable/blue_circle"
+                    android:layout_height="60dp">
+
+                    <LinearLayout
+                        android:id="@+id/input_sets_mins"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/sets_or_mins"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:gravity="center_horizontal"
+                    android:text="Sets" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/select_image"
+                android:layout_width="25dp"
+                android:background="@drawable/select_icon"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
